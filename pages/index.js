@@ -59,7 +59,7 @@ export default function Home() {
               <Input
                 name="nomeDoUsuario"
                 onChange={(event) => setName(event.target.value)}
-                placeholder="Digite o seu nome"
+                placeholder="Insira o seu nome"
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
@@ -79,7 +79,7 @@ export default function Home() {
           animate="show"
         >
           <Widget.Content>
-            <h1>Quizes da galera</h1>
+            <h1>Outros quizzes</h1>
             <ul>
               {db.external.map((externalLink) => {
                 const [projectName, githubUser] = externalLink
